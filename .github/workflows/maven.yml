@@ -29,7 +29,7 @@ jobs:
     - name: build docker image and push to dockerhub 
       uses: mr-smithers-excellent/docker-build-push@v3
       with:
-       image: docker-hub-repo/image-name
+       image: gluck21/product
        registry: docker.io
        username: ${{ secrets.DOCKER_USERNAME }}
        password: ${{ secrets.DOCKER_PASSWORD }
