@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    environment:
+      { POSTGRES_PASSWORD=1234,
+        POSTGRES_DB=demo_product}
+    ports:
+      - "9000:5432"
+
+  app:
+    image: demo_product
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
