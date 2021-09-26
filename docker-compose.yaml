@@ -7,7 +7,6 @@ services:
         POSTGRES_DB=demo_product}
     ports:
       - "9000:5432"
-
   app:
     image: demo_product
     ports:
